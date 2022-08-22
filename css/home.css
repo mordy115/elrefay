@@ -1,0 +1,162 @@
+.header-home{
+    padding-top: 100px;
+}
+.header-home img {
+  width: 100%;
+  height: 300px;
+}
+.content-header{
+    background-color: rgb(231, 211, 147);
+    height: 300px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+.image-header{
+    position: relative;
+}
+
+.content-header h2{
+    font-size: 50px;
+}
+.rgba{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0,0, .5);
+}
+.btn-header,.rgba{
+    color: #fff;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    background-color: #5b92e0;
+    padding: 8px 12px;
+    transition: all 1.5s;
+    border-radius: 5px;
+    z-index: 0;
+    text-decoration: dashed;
+    opacity: 0;
+}
+.rgba{
+    transition: all .8s;
+}
+.image-header:hover .btn-header {
+    top: 50%;  
+    opacity: 1;
+} 
+.image-header:hover .rgba{
+    top: 50%;
+    background-color: black;
+    opacity: .2;
+}
+.content-header:hover .btn-header {
+   top: 90%;
+   opacity: 1;
+}
+.btn-header:hover,.EXPERIENCE h3:hover,.ABOUT-US h3:hover , .CUSTOMERS h3:hover{
+    color: #db8514de;
+}
+.EXPERIENCE ,.ABOUT-US,.CUSTOMERS{
+    margin: 20px 0;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+.content-experience{
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    opacity: 1;
+    animation-name: textExperience;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes textExperience {
+  0%  {color: #db8514de; top:20%;}
+  25% {color:#ee8d0fde; top:40%;opacity: 1;}
+  50%  {color:#d38623de; top:60%;}
+}
+.content-experience:hover{
+    color: #db8514de;
+}
+.about-team{
+    position: relative;
+    transition: all 1.5s;
+}
+.about-team img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+.content-about{
+    width: 400px;
+    height: 400px;
+    font-size: 22px;
+    position: absolute;
+    bottom:-20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 20px;
+    opacity: 0;
+    transition: all .5s;
+    padding-top: 13.5rem;
+}
+.rgba-about{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom:-20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 20px; 
+    transition: all .5s;
+   
+}
+.about-team:hover .content-about{
+    bottom:0%;
+    opacity: 1;
+    color: white;
+}
+.about-team:hover .content-about{
+    background-color: black;
+    bottom:0%;
+    opacity: .3;
+}
+.CUSTOMERS{
+    width: 100%;
+    height: 550px;
+    margin: 15rem 0 8rem 0;
+    
+}
+
+.CUSTOMERS img{
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+@media(max-width:768px) {
+    .CUSTOMERS{
+        margin: 62rem 0 8rem 0 !important;
+    }
+    .ABOUT-US{
+        margin-top: 32rem  !important;
+    }
+    
+}
+@media(min-width:768px) and (max-width:991px) {
+    .CUSTOMERS{
+        margin: 62rem 0 8rem 0 !important;
+    }
+    .ABOUT-US{
+        margin-top: 15rem  !important;
+    }
+    
+}
